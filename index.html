@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>珈琲時 -Coffee Toki- | くつろぎのコーヒーショップ</title>
+<meta name="description" content="珈琲時(コーヒートキ)は、厳選した豆と自家焙煎にこだわるコーヒーショップです。街の中でほっと一息つける、あなたの時間をご提供します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <svg class="logo__icon" viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+        <path d="M10 20h24v10a12 12 0 0 1-12 12 12 12 0 0 1-12-12V20z" fill="#fff" opacity="0.95"/>
+        <path d="M34 22h4a5 5 0 0 1 0 10h-3" fill="none" stroke="#fff" stroke-width="2.5"/>
+        <path d="M16 12c-1 2 2 3 1 5M22 10c-1 2 2 3 1 5M28 12c-1 2 2 3 1 5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="logo__text">珈琲時 <small>Coffee Toki</small></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#concept">こだわり</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#store">店舗情報</a></li>
+        <li><a href="#news">お知らせ</a></li>
+        <li><a href="#contact" class="nav__cta">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+      <circle cx="640" cy="120" r="260" fill="#ffffff" opacity="0.05"/>
+      <circle cx="120" cy="680" r="200" fill="#ffffff" opacity="0.05"/>
+    </svg>
+  </div>
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <p class="hero__eyebrow">SINCE YOUR EVERYDAY</p>
+      <h1 class="hero__title">一杯から、<br>はじまる時間。</h1>
+      <p class="hero__desc">厳選した豆を丁寧に自家焙煎し、心を込めて淹れる一杯を。<br>忙しい毎日の中に、ほっとひと息つける場所を。</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">メニューを見る</a>
+        <a href="#store" class="btn btn--outline">店舗を探す</a>
+      </div>
+    </div>
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 420 420" class="cup-illust">
+        <ellipse cx="210" cy="330" rx="140" ry="16" fill="#00000022"/>
+        <path d="M90 150h190l-16 130a45 45 0 0 1-45 40h-68a45 45 0 0 1-45-40z" fill="#fff8ef"/>
+        <path d="M90 150h190l-4 32H94z" fill="#f0ddc0"/>
+        <path d="M280 165h22a34 34 0 0 1 0 68h-14" fill="none" stroke="#fff8ef" stroke-width="12" stroke-linecap="round"/>
+        <g stroke="#fff8ef" stroke-width="8" stroke-linecap="round" opacity="0.9">
+          <path d="M150 110c-10 14 12 20 4 36"/>
+          <path d="M185 96c-10 14 12 20 4 36"/>
+          <path d="M220 110c-10 14 12 20 4 36"/>
+        </g>
+        <path d="M120 182c20 16 42 16 62 0s42-16 62 0 42 16 62 0" fill="none" stroke="#c98a4b" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+      </svg>
+    </div>
+  </div>
+  <div class="hero__wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="#fbf6ee"/></svg>
+  </div>
+</section>
+
+<!-- こだわり -->
+<section class="concept" id="concept">
+  <div class="container">
+    <p class="section__eyebrow">OUR COMMITMENT</p>
+    <h2 class="section__title">珈琲時のこだわり</h2>
+
+    <div class="concept__grid">
+      <div class="concept__card">
+        <div class="concept__icon">
+          <svg viewBox="0 0 64 64" width="56" height="56"><ellipse cx="32" cy="32" rx="16" ry="24" fill="#7a4a2b"/><path d="M32 8c8 8 8 40 0 48" stroke="#c98a4b" stroke-width="2" fill="none"/></svg>
+        </div>
+        <h3>厳選された豆</h3>
+        <p>世界各地の農園から、品質にこだわった生豆だけを厳選。素材本来の風味を大切にしています。</p>
+      </div>
+
+      <div class="concept__card">
+        <div class="concept__icon">
+          <svg viewBox="0 0 64 64" width="56" height="56"><circle cx="32" cy="36" r="18" fill="#c0392b"/><path d="M20 20c4-6 20-6 24 0" stroke="#c0392b" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <h3>自家焙煎へのこだわり</h3>
+        <p>店舗併設の焙煎機で、毎日少量ずつ丁寧に焙煎。焼きたての香りと味わいをお届けします。</p>
+      </div>
+
+      <div class="concept__card">
+        <div class="concept__icon">
+          <svg viewBox="0 0 64 64" width="56" height="56"><path d="M12 44c8-24 32-24 40 0" stroke="#7a4a2b" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="32" cy="20" r="8" fill="#c98a4b"/></svg>
+        </div>
+        <h3>くつろぎの空間</h3>
+        <p>木のぬくもりを感じる店内で、ゆっくりと流れる時間をご提供。おひとりでもご家族とでも。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- メニュー -->
+<section class="menu" id="menu">
+  <div class="container">
+    <p class="section__eyebrow">MENU</p>
+    <h2 class="section__title">おすすめメニュー</h2>
+
+    <div class="menu__grid">
+
+      <article class="menu__card">
+        <div class="menu__thumb menu__thumb--blend">
+          <svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#f3e3c8"/><path d="M60 90h80l-8 60a20 20 0 0 1-20 18H88a20 20 0 0 1-20-18z" fill="#7a4a2b"/><path d="M140 100h14a18 18 0 0 1 0 36h-8" fill="none" stroke="#7a4a2b" stroke-width="6"/></svg>
+        </div>
+        <h3>ブレンドコーヒー</h3>
+        <p class="menu__desc">当店定番の看板ブレンド。バランスの取れたコクと香り。</p>
+        <p class="menu__price">¥300<small>(税込)</small></p>
+      </article>
+
+      <article class="menu__card">
+        <div class="menu__thumb menu__thumb--latte">
+          <svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#efe0c9"/><path d="M60 90h80l-8 60a20 20 0 0 1-20 18H88a20 20 0 0 1-20-18z" fill="#e8c9a0"/><circle cx="100" cy="98" r="14" fill="#fff"/></svg>
+        </div>
+        <h3>カフェラテ</h3>
+        <p class="menu__desc">ミルクの甘みとエスプレッソが調和するまろやかな一杯。</p>
+        <p class="menu__price">¥380<small>(税込)</small></p>
+      </article>
+
+      <article class="menu__card">
+        <div class="menu__thumb menu__thumb--ice">
+          <svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#eaf1f2"/><path d="M70 70h60l-6 80a14 14 0 0 1-14 12H90a14 14 0 0 1-14-12z" fill="#c9dfe0" opacity="0.9"/><path d="M70 70h60" stroke="#7a4a2b" stroke-width="4"/></svg>
+        </div>
+        <h3>アイスコーヒー</h3>
+        <p class="menu__desc">じっくり水出しで抽出した、すっきりとした後味。</p>
+        <p class="menu__price">¥320<small>(税込)</small></p>
+      </article>
+
+      <article class="menu__card">
+        <div class="menu__thumb menu__thumb--crepe">
+          <svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#f7ece0"/><path d="M50 130a50 50 0 0 1 100 0z" fill="#e8c9a0"/><path d="M50 130q50-14 100 0" fill="none" stroke="#c98a4b" stroke-width="3"/></svg>
+        </div>
+        <h3>ミルクレープ</h3>
+        <p class="menu__desc">薄く焼き上げたクレープ生地とクリームの層をお楽しみに。</p>
+        <p class="menu__price">¥450<small>(税込)</small></p>
+      </article>
+
+      <article class="menu__card">
+        <div class="menu__thumb menu__thumb--sandwich">
+          <svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#f3e9d8"/><path d="M40 110c30-30 90-30 120 0z" fill="#e3b25e"/><rect x="45" y="108" width="110" height="10" fill="#8fae55"/></svg>
+        </div>
+        <h3>クロワッサンサンド</h3>
+        <p class="menu__desc">サクサクのクロワッサンに、彩り野菜とハムをたっぷりと。</p>
+        <p class="menu__price">¥480<small>(税込)</small></p>
+      </article>
+
+      <article class="menu__card">
+        <div class="menu__thumb menu__thumb--scone">
+          <svg viewBox="0 0 200 200"><rect width="200" height="200" fill="#f2e6d3"/><path d="M60 130l40-50 40 50z" fill="#c98a4b"/></svg>
+        </div>
+        <h3>焼きたてスコーン</h3>
+        <p class="menu__desc">毎朝店内で焼き上げる、素朴で優しい味わいのスコーン。</p>
+        <p class="menu__price">¥280<small>(税込)</small></p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 店舗情報 -->
+<section class="store" id="store">
+  <div class="container store__inner">
+    <div class="store__art" aria-hidden="true">
+      <svg viewBox="0 0 400 300">
+        <rect width="400" height="300" fill="#e9d8bd"/>
+        <rect x="40" y="120" width="320" height="140" fill="#7a4a2b"/>
+        <polygon points="20,130 200,40 380,130" fill="#c0392b"/>
+        <rect x="180" y="170" width="40" height="90" fill="#3d2517"/>
+        <rect x="70" y="150" width="50" height="50" fill="#fbf6ee" opacity="0.9"/>
+        <rect x="280" y="150" width="50" height="50" fill="#fbf6ee" opacity="0.9"/>
+      </svg>
+    </div>
+    <div class="store__text">
+      <p class="section__eyebrow">STORE INFORMATION</p>
+      <h2 class="section__title section__title--left">店舗情報</h2>
+      <dl class="store__list">
+        <div>
+          <dt>店名</dt>
+          <dd>珈琲時 -Coffee Toki- 本店</dd>
+        </div>
+        <div>
+          <dt>住所</dt>
+          <dd>〒000-0000 東京都〇〇区〇〇1-2-3<span class="note">(サンプル住所です)</span></dd>
+        </div>
+        <div>
+          <dt>営業時間</dt>
+          <dd>7:00〜21:00 (年中無休)</dd>
+        </div>
+        <div>
+          <dt>電話番号</dt>
+          <dd>00-0000-0000<span class="note">(サンプルです)</span></dd>
+        </div>
+      </dl>
+      <a href="#contact" class="btn btn--primary">お問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<!-- お知らせ -->
+<section class="news" id="news">
+  <div class="container">
+    <p class="section__eyebrow">NEWS</p>
+    <h2 class="section__title">お知らせ</h2>
+
+    <ul class="news__list">
+      <li>
+        <time>2026.09.01</time>
+        <span class="news__tag">キャンペーン</span>
+        <p>秋の新作「かぼちゃモンブランラテ」を期間限定で発売しました。</p>
+      </li>
+      <li>
+        <time>2026.08.15</time>
+        <span class="news__tag">お知らせ</span>
+        <p>夏季休業日のご案内を掲載いたしました。詳しくは店舗までお問い合わせください。</p>
+      </li>
+      <li>
+        <time>2026.07.10</time>
+        <span class="news__tag">メディア</span>
+        <p>地域情報誌に当店の自家焙煎へのこだわりが紹介されました。</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section class="contact" id="contact">
+  <div class="container contact__inner">
+    <p class="section__eyebrow">CONTACT</p>
+    <h2 class="section__title">お問い合わせ</h2>
+    <p class="contact__desc">ご予約・お問い合わせは、お電話またはフォームより承っております。</p>
+    <div class="hero__actions contact__actions">
+      <a href="tel:0000000000" class="btn btn--primary">電話でお問い合わせ</a>
+      <a href="mailto:info@example.com" class="btn btn--outline">メールで問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="logo__text logo__text--footer">珈琲時 <small>Coffee Toki</small></span>
+      <p>一杯から、はじまる時間を。</p>
+    </div>
+    <ul class="footer__nav">
+      <li><a href="#concept">こだわり</a></li>
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#store">店舗情報</a></li>
+      <li><a href="#news">お知らせ</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+    <p class="footer__copy">&copy; 2026 Coffee Toki. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
