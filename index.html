@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Douce（カフェ・ドゥース）| 毎日に、やさしい一杯を。</title>
+<meta name="description" content="Café Douce（カフェ・ドゥース）は、厳選した豆と丁寧な焙煎にこだわるコーヒーショップです。焼きたてのスイーツと共に、心やすらぐひとときをお過ごしください。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%236F4E37'/%3E%3Cpath d='M16 26h28v14a10 10 0 0 1-10 10H26a10 10 0 0 1-10-10V26z' fill='%23FAF3E7'/%3E%3Cpath d='M44 28h4a6 6 0 0 1 0 12h-4' fill='none' stroke='%23FAF3E7' stroke-width='4'/%3E%3Cpath d='M22 18c0-3 3-3 3-6M30 18c0-3 3-3 3-6M38 18c0-3 3-3 3-6' stroke='%23D6A76A' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  // 画像読み込みに失敗した場合の代替表示(コーヒーをイメージしたグラデーション+アイコン)
+  function imgFallback(el){
+    el.onerror = null;
+    el.classList.add('img-fallback');
+    el.src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%235C3A21%22/%3E%3Cstop offset=%22100%25%22 stop-color=%22%232E1B0E%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%22400%22 height=%22300%22 fill=%22url(%23g)%22/%3E%3Cpath d=%22M150 150h90v45a30 30 0 0 1-30 30h-30a30 30 0 0 1-30-30v-45z%22 fill=%22%23F2E4CE%22 opacity=%220.9%22/%3E%3Cpath d=%22M240 158h14a18 18 0 0 1 0 36h-14%22 fill=%22none%22 stroke=%22%23F2E4CE%22 stroke-width=%228%22 opacity=%220.9%22/%3E%3Cpath d=%22M168 130c0-9 9-9 9-18M195 130c0-9 9-9 9-18M222 130c0-9 9-9 9-18%22 stroke=%22%23D6A76A%22 stroke-width=%226%22 fill=%22none%22 stroke-linecap=%22round%22 opacity=%220.8%22/%3E%3C/svg%3E';
+  }
+</script>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#6F4E37"/><path d="M16 26h28v14a10 10 0 0 1-10 10H26a10 10 0 0 1-10-10V26z" fill="#FAF3E7"/><path d="M44 28h4a6 6 0 0 1 0 12h-4" fill="none" stroke="#FAF3E7" stroke-width="4"/><path d="M22 18c0-3 3-3 3-6M30 18c0-3 3-3 3-6M38 18c0-3 3-3 3-6" stroke="#D6A76A" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+      <span class="logo-text">Café Douce<small>カフェ・ドゥース</small></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="#concept">こだわり</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#news">ニュース</a></li>
+        <li><a href="#shop">店舗情報</a></li>
+        <li><a href="#instagram">Instagram</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#shop" class="btn btn-outline btn-sm">店舗を探す</a>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80"
+           alt="湯気の立つコーヒーカップとコーヒー豆" onerror="imgFallback(this)">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="eyebrow">EST. 2010 — SPECIALTY COFFEE</p>
+      <h1>毎日に、<br>やさしい一杯を。</h1>
+      <p class="hero-lead">厳選した豆を、一杯ずつ丁寧に。<br class="sp-only">心がほどけるひとときを、Café Douceで。</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">メニューを見る</a>
+        <a href="#shop" class="btn btn-ghost">店舗を探す</a>
+      </div>
+    </div>
+    <a href="#news" class="scroll-cue" aria-label="次のセクションへ"><span></span></a>
+  </section>
+
+  <!-- ニュース -->
+  <section class="news" id="news">
+    <div class="container">
+      <div class="section-head">
+        <h2><span class="en">News</span>お知らせ</h2>
+        <a href="#" class="link-more">一覧を見る &rarr;</a>
+      </div>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">2026.09.10</span>
+          <span class="news-tag tag-new">NEW</span>
+          <a href="#menu" class="news-title">秋の新作「モンブランラテ」が期間限定で登場しました</a>
+        </li>
+        <li>
+          <span class="news-date">2026.08.20</span>
+          <span class="news-tag tag-info">お知らせ</span>
+          <a href="#shop" class="news-title">夏季休業のご案内（8/13〜8/16）</a>
+        </li>
+        <li>
+          <span class="news-date">2026.07.15</span>
+          <span class="news-tag tag-event">イベント</span>
+          <a href="#" class="news-title">親子で楽しむ「コーヒー教室」を開催しました</a>
+        </li>
+        <li>
+          <span class="news-date">2026.06.01</span>
+          <span class="news-tag tag-recruit">採用情報</span>
+          <a href="#contact" class="news-title">一緒に働く仲間を募集しています（アルバイト・社員）</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- こだわり -->
+  <section class="concept" id="concept">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">OUR COMMITMENT</p>
+        <h2><span class="en">Concept</span>私たちのこだわり</h2>
+        <p class="section-lead">豆選びから焙煎、抽出まで。すべての工程に、丁寧さを込めています。</p>
+      </div>
+
+      <div class="concept-grid">
+        <article class="concept-card reveal">
+          <div class="concept-img">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=80"
+                 alt="厳選されたコーヒー豆" loading="lazy" onerror="imgFallback(this)">
+          </div>
+          <span class="concept-num">01</span>
+          <h3>豆へのこだわり</h3>
+          <p>世界各国の農園から、味と品質にこだわった豆だけを買い付け。生産者の顔が見えるフェアな取引を大切にしています。</p>
+        </article>
+
+        <article class="concept-card reveal">
+          <div class="concept-img">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=900&q=80"
+                 alt="店内で豆を焙煎する様子" loading="lazy" onerror="imgFallback(this)">
+          </div>
+          <span class="concept-num">02</span>
+          <h3>焙煎へのこだわり</h3>
+          <p>各店舗で少量ずつ自家焙煎。豆の個性を引き出す温度と時間を見極め、香り高い一杯に仕上げます。</p>
+        </article>
+
+        <article class="concept-card reveal">
+          <div class="concept-img">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80"
+                 alt="バリスタが淹れるラテアート" loading="lazy" onerror="imgFallback(this)">
+          </div>
+          <span class="concept-num">03</span>
+          <h3>一杯ずつ、丁寧に。</h3>
+          <p>ご注文をいただいてから一杯ずつハンドドリップ。忙しい毎日の中にも、ほっとひと息つける時間をお届けします。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- おすすめメニュー -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">RECOMMENDED</p>
+        <h2><span class="en">Menu</span>おすすめメニュー</h2>
+        <p class="section-lead">定番から季節限定まで、Café Douce自慢のラインナップ。</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+                 alt="ブレンドコーヒー" loading="lazy" onerror="imgFallback(this)">
+          </div>
+          <div class="menu-body">
+            <h3>ブレンドコーヒー</h3>
+            <p>数種の豆を配合した、当店定番の味わい。</p>
+            <span class="price">¥420</span>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80"
+                 alt="カフェラテ" loading="lazy" onerror="imgFallback(this)">
+          </div>
+          <div class="menu-body">
+            <h3>カフェラテ</h3>
+            <p>エスプレッソと滑らかなミルクの黄金比。</p>
+            <span class="price">¥480</span>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+                 alt="アイスコーヒー" loading="lazy" onerror="imgFallback(this)">
+          </div>
+          <div class="menu-body">
+            <h3>アイスコーヒー</h3>
+            <p>じっくり抽出した深みのある味わいを、冷たく爽やかに。</p>
+            <span class="price">¥450</span>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+                 alt="カプチーノ" loading="lazy" onerror="imgFallback(this)">
+          </div>
+          <div class="menu-body">
+            <h3>カプチーノ</h3>
+            <p>ふんわりミルクフォームと、しっかりエスプレッソ。</p>
+            <span class="price">¥490</span>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+                 alt="季節のスイーツセット" loading="lazy" onerror="imgFallback(this)">
+          </div>
+          <div class="menu-body">
+            <h3>季節のスイーツセット</h3>
+            <p>その時期だけのケーキとドリンクのセット。</p>
+            <span class="price">¥680</span>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+                 alt="クロワッサンサンド" loading="lazy" onerror="imgFallback(this)">
+          </div>
+          <div class="menu-body">
+            <h3>クロワッサンサンド</h3>
+            <p>サクサクのクロワッサンに厳選の具材を挟んで。</p>
+            <span class="price">¥520</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 季節限定バナー -->
+  <section class="seasonal">
+    <div class="seasonal-media">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80"
+           alt="秋の味覚フェアのイメージ" loading="lazy" onerror="imgFallback(this)">
+      <div class="seasonal-overlay"></div>
+    </div>
+    <div class="container seasonal-content">
+      <p class="eyebrow">LIMITED TIME</p>
+      <h2>秋の味覚フェア開催中</h2>
+      <p>栗とほうじ茶を使った、この季節だけの特別なメニューをご用意しました。</p>
+      <a href="#menu" class="btn btn-primary">詳しく見る</a>
+    </div>
+  </section>
+
+  <!-- 店舗情報 -->
+  <section class="shop" id="shop">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">FIND US</p>
+        <h2><span class="en">Shop</span>店舗情報</h2>
+      </div>
+
+      <div class="shop-grid">
+        <div class="shop-info reveal">
+          <h3>Café Douce 本店</h3>
+          <dl>
+            <div class="shop-row">
+              <dt>住所</dt>
+              <dd>〒100-0001 東京都千代田区千代田1-1<br>ドゥースビル 1F</dd>
+            </div>
+            <div class="shop-row">
+              <dt>営業時間</dt>
+              <dd>平日 7:00〜20:00<br>土日祝 8:00〜19:00</dd>
+            </div>
+            <div class="shop-row">
+              <dt>定休日</dt>
+              <dd>年中無休（年末年始を除く）</dd>
+            </div>
+            <div class="shop-row">
+              <dt>電話番号</dt>
+              <dd><a href="tel:0300000000">03-0000-0000</a></dd>
+            </div>
+            <div class="shop-row">
+              <dt>アクセス</dt>
+              <dd>各線「東京」駅より徒歩5分</dd>
+            </div>
+          </dl>
+          <a href="#" class="btn btn-outline">全店舗一覧を見る</a>
+        </div>
+
+        <div class="shop-map reveal">
+          <iframe
+            title="店舗地図"
+            src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%A7%85&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram -->
+  <section class="instagram" id="instagram">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">FOLLOW US</p>
+        <h2><span class="en">Instagram</span>@cafedouce_official</h2>
+      </div>
+      <div class="insta-grid">
+        <a class="insta-item reveal" href="#"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=80" alt="Instagram投稿1" loading="lazy" onerror="imgFallback(this)"></a>
+        <a class="insta-item reveal" href="#"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=80" alt="Instagram投稿2" loading="lazy" onerror="imgFallback(this)"></a>
+        <a class="insta-item reveal" href="#"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=500&q=80" alt="Instagram投稿3" loading="lazy" onerror="imgFallback(this)"></a>
+        <a class="insta-item reveal" href="#"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=80" alt="Instagram投稿4" loading="lazy" onerror="imgFallback(this)"></a>
+        <a class="insta-item reveal" href="#"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="Instagram投稿5" loading="lazy" onerror="imgFallback(this)"></a>
+        <a class="insta-item reveal" href="#"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=500&q=80" alt="Instagram投稿6" loading="lazy" onerror="imgFallback(this)"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- アプリCTA -->
+  <section class="app-cta">
+    <div class="container app-cta-inner">
+      <div>
+        <p class="eyebrow">MEMBERSHIP</p>
+        <h2>公式アプリ会員募集中</h2>
+        <p>ドリンク1杯サービスや限定クーポンなど、お得な特典が満載。今すぐダウンロード。</p>
+      </div>
+      <div class="app-buttons">
+        <a href="#" class="btn btn-dark">App Storeで入手</a>
+        <a href="#" class="btn btn-dark">Google Playで入手</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section class="contact" id="contact">
+    <div class="container center">
+      <p class="eyebrow">CONTACT</p>
+      <h2>お問い合わせ</h2>
+      <p class="section-lead">ご意見・ご質問、採用に関するお問い合わせはこちらから承っております。</p>
+      <a href="mailto:info@cafe-douce.example.com" class="btn btn-primary">メールでお問い合わせ</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- フッター -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo">
+        <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#F2E4CE"/><path d="M16 26h28v14a10 10 0 0 1-10 10H26a10 10 0 0 1-10-10V26z" fill="#3A2418"/><path d="M44 28h4a6 6 0 0 1 0 12h-4" fill="none" stroke="#3A2418" stroke-width="4"/></svg>
+        <span class="logo-text">Café Douce</span>
+      </a>
+      <p>毎日に、やさしい一杯を。</p>
+      <div class="sns-icons">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2c2.7 0 3 .01 4.1.06 1.1.05 1.85.23 2.5.48.68.26 1.25.62 1.82 1.18.56.56.92 1.14 1.18 1.82.25.65.43 1.4.48 2.5.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1.1-.23 1.85-.48 2.5-.26.68-.62 1.25-1.18 1.82-.56.56-1.14.92-1.82 1.18-.65.25-1.4.43-2.5.48-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.85-.23-2.5-.48a4.9 4.9 0 0 1-1.82-1.18 4.9 4.9 0 0 1-1.18-1.82c-.25-.65-.43-1.4-.48-2.5C2.01 15 2 14.7 2 12s.01-3 .06-4.1c.05-1.1.23-1.85.48-2.5.26-.68.62-1.25 1.18-1.82A4.9 4.9 0 0 1 5.54 1.4c.65-.25 1.4-.43 2.5-.48C9.14 2.01 9.4 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M18.9 2h3.3l-7.2 8.2L23.5 22h-6.6l-5.2-6.8L5.7 22H2.4l7.7-8.8L1.5 2h6.8l4.7 6.2L18.9 2Zm-1.2 18h1.8L7.4 3.9H5.5L17.7 20Z"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M13.5 22v-8.5H16l.4-3.2h-2.9V8.3c0-.9.3-1.6 1.7-1.6h1.8V3.9C16.7 3.8 15.6 3.7 14.3 3.7c-2.7 0-4.5 1.6-4.5 4.6v2h-2.9v3.2h2.9V22h3.7Z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>メニュー</h4>
+        <ul>
+          <li><a href="#concept">こだわり</a></li>
+          <li><a href="#menu">おすすめメニュー</a></li>
+          <li><a href="#news">お知らせ</a></li>
+          <li><a href="#shop">店舗情報</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>会社情報</h4>
+        <ul>
+          <li><a href="#">運営会社</a></li>
+          <li><a href="#contact">採用情報</a></li>
+          <li><a href="#">プレスリリース</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>サポート</h4>
+        <ul>
+          <li><a href="#contact">お問い合わせ</a></li>
+          <li><a href="#">よくある質問</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 Café Douce. All Rights Reserved.（本サイトはサンプルのため架空の店舗情報です）</p>
+    </div>
+  </div>
+</footer>
+
+<button id="to-top" class="to-top" aria-label="ページトップへ戻る">&uarr;</button>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
